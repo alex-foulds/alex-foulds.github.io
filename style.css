@@ -1,0 +1,40 @@
+:root {
+    font-size: 16px;
+    font-family: 'Arial';
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+    --transition-speed: 600ms;
+  }
+
+body {
+    color: black;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+  }
+
+main {
+    margin-left: 10rem;
+    padding: 1rem;
+}
+
+.navbar {
+    height: 100vh;
+    position: fixed;
+    width: 10rem;
+}
+
+.navbar-nav{
+    list-style: none; 
+    padding: 0;
+    padding-left: 1rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
