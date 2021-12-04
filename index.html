@@ -1,57 +1,59 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
 
-<nav class="navbar">
-    <ul class="navbar-nav">
-        <li class = "navbar-item">
-            <a href="#" class="active">
-                <span class="link-text">About Me</span>
-            </a>
-        </li>
-
-        <li class = "navbar-item">
-            <a href="#" class="">
-                <span class="link-text">Experience</span>
-            </a>
-        </li>
-
-        <li class = "navbar-item">
-            <a href="#" class="">
-                <span class="link-text">Projects</span>
-            </a>
-        </li>
-
-        <li class = "navbar-item">
-            <a href="#" class="">
-                <span class="link-text">Contact Me</span>
-            </a>
-        </li>
-    </ul>
-</nav>
-
-<main>
-    <div class="about">
+    <div class="section" id="about" data-label="About Me">
         <h1>Alex Foulds</h1>
         <p>Hello there, General Kenobi.</p>
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">LinkedIn</a>
     </div>
-    
-    <div class="experience">
+
+    <div class="section" id="experience" data-label="My Experience">
         <h1>My Experience</h1>
     </div>
 
-    <div class="projects">
+    <div class="section" id="projects" data-label="Projects">
         <h1>My Projects</h1>
     </div>
 
-    <div class="contact">
+    <div class="section" id="contact" data-label="Get In Conact">
         <h1>Contact Me</h1>
     </div>
+
+
+    <!-- <nav class="navbar">
+
+        <div class="navbar-item">
+            <a href="#about" class="nav-link nav-link-active"></a>
+            <span class="link-text">About Me</span>
+        </div>
+
+        <div class="navbar-item">
+            <a href="#experience" class="nav-link"></a>
+            <span class="link-text">My Experience</span>
+        </div>
+
+        <div class="navbar-item">
+            <a href="#projects" class="nav-link"></a>
+            <span class="link-text">Projects</span>
+        </div>
+
+        <div class="navbar-item">
+            <a href="#contact" class="nav-link"></a>
+            <span class="link-text">Get In Conact</span>
+        </div>
+
+    </nav> -->
+
+    <script type="text/javascript" src="js/navigation.js">
+        activateNavigation();
+    </script>
     
-</main>
+
 </body>
-</html> 
+</html>

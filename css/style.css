@@ -5,64 +5,86 @@
     --text-secondary: #ececec;
     --bg-primary: #23232e;
     --bg-secondary: #141418;
+
+    --custom-orange: #CF995F;
+    --custom-grey: #333138;
+    --custom-green: #788585;
+    --custom-highlight: #d6ffb7;
   }
 
 html {
-    margin: 0;
+    scroll-behavior: smooth;
 }
 
 body {
     color: black;
-    background-color: white;
+    background-color: var(--text-secondary);
     margin: 0;
     padding: 0;
     border: 0;
      
 }
 
-main {
-    margin-left: 10rem;
+h1{
+    margin-top: 0%;
 }
 
-div {
-    height: 100vh;
-    margin-top: -1.5rem;
-}
 
-.navbar {
-    height: 100vh;
+.navbar{
+    padding: 1rem;
     position: fixed;
-    width: 10rem;
-}
-
-.navbar-nav{
-    list-style: none; 
-    padding: 0;
-    padding-left: 1rem;
-    margin: 0 0 0 0;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    position: absolute;
+    right: 0;
     top: 50%;
     transform: translateY(-50%);
 }
 
 .navbar-item{
-    margin-top: 1rem;
-    margin-left: 0.5rem;
+    align-items: center;
+    display: flex;
+    margin-bottom: 1rem;
+    flex-direction: row-reverse;
 }
 
-.about {
-    background-color: #d6ffb7;
+.nav-link{
+    background: rgba(0,0,0,0.3);
+    border-radius: 50%;
+    height: 1rem;
+    width: 1rem;
+    margin-left: 1rem;
+    transition: transform(0.1s);
+
 }
-.experience{
-    background-color: #788585;
+
+.nav-link-active{
+    transform: scale(1.4);
+    background: black;
 }
-.projects{
-    background-color: #FAA275;
+
+.nav-link:hover ~ .link-text{
+    opacity: 1;
+
 }
-.contact{
-    background-color: #333138;
-    height: 50vh;
+
+.link-text{
+    font-weight: bold;
+    color: black;
+    opacity: 0;
+    transition: opacity 0.1s;
+}
+
+.section {
+    height: 100vh;
+}
+
+#about {
+    background-color: var(--custom-orange);
+}
+#experience{
+    background-color: var(--custom-grey);
+}
+#projects{
+    background-color: var(--custom-green);
+}
+#contact{
+    background-color: var(--text-primary); 
 }
